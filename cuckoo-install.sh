@@ -4,7 +4,7 @@
 
 # Copyright (C) 2014-2015 David Reguera García - dreg@buguroo.com
 # Copyright (C) 2015 David Francos Cuartero - dfrancos@buguroo.com
-# Copyright (C) 2017-2018 Erik Van Buggenhout - NVISO
+# Copyright (C) 2017-2018 Erik Van Buggenhout & Didier Stevens - NVISO
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -68,7 +68,8 @@ cat <<EO
 │                CuckooAutoInstall 0.2 - NVISO Mod        │
 │ David Reguera García - Dreg <dreguera@buguroo.com>      │
 │ David Francos Cuartero - XayOn <dfrancos@buguroo.com>   │
-│ Erik Van Buggenhout - <evanbuggenhout@nviso.be>         │
+│ Erik Van Buggenhout - <evanbuggenhout@nviso.be>         |
+│ Didier Stevens - <dstevens@nviso.be                     |
 │            Buguroo Offensive Security - 2015            │
 │            NVISO - 2017-2018                            │
 └─────────────────────────────────────────────────────────┘
