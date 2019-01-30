@@ -1,8 +1,6 @@
-#!/bin/bash
-# SANS SEC599 Hot Fix Script
-# Only to be used for quick fixes
-# Author: Erik Van Buggenhout (evanbuggenhout@nviso.be)
-# Last revision: 23 December 2018
+# SEC599 Maintenance script for Ubuntu01
+# --------------------------------------
+# Last update: 30 January 2019
+# This script is used for emergency patches / updates in SEC599
 
-ifconfig eth0 10.10.10.80
-service networking restart
+whoami > /tmp/whoami
