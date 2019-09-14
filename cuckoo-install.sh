@@ -35,7 +35,7 @@ CUCKOO_USER="cuckoo"
 CUCKOO_PASSWD="cuckoo"
 CUSTOM_PKGS=""
 ORIG_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}"  )" && pwd  )
-VOLATILITY_URL="http://downloads.volatilityfoundation.org/releases/2.4/volatility-2.4.tar.gz"
+VOLATILITY_URL="http://downloads.volatilityfoundation.org/releases/2.6/volatility-2.6.zip"
 YARA_REPO="https://github.com/plusvic/yara"
 
 VIRTUALBOX_REP="deb http://download.virtualbox.org/virtualbox/debian $RELEASE contrib"
@@ -191,8 +191,8 @@ build_yara(){
 
 build_volatility(){
     wget $VOLATILITY_URL
-    tar xvf volatility-2.4.tar.gz
-    cd volatility-2.4/
+    tar xvf volatility-2.6.zip
+    cd volatility-2.6/
     $SUDO python setup.py build
     $SUDO python setup.py install
     return 0
@@ -328,12 +328,12 @@ run_and_log allow_tcpdump "Allowing tcpdump for normal users"
 
 # Preparing VirtualBox VM
 run_and_log import_virtualbox_vm "Importing specified VirtualBoxVM"
-run_and_log launch_virtualbox_vm "Launching imported VM"
-sleep 60
-run_and_log create_virtualbox_vm_snapshot "Creating snapshot 'Clean'"
-run_and_log poweroff_virtualbox_vm
+# run_and_log launch_virtualbox_vm "Launching imported VM"
+# sleep 60
+# run_and_log create_virtualbox_vm_snapshot "Creating snapshot 'Clean'"
+# run_and_log poweroff_virtualbox_vm
 
 # Configuring Cuckoo
-run_and_log run_cuckoo_community "Downloading community rules"
-run_and_log update_cuckoo_config "Updating Cuckoo config files"
-run_and_log create_cuckoo_startup_scripts "Creating Cuckoo startup scripts"
+# run_and_log run_cuckoo_community "Downloading community rules"
+# run_and_log update_cuckoo_config "Updating Cuckoo config files"
+# run_and_log create_cuckoo_startup_scripts "Creating Cuckoo startup scripts"
