@@ -12,5 +12,5 @@
 /usr/bin/wget -O /root/Desktop/CTF/5-movetowin02-INITIAL.sh https://raw.githubusercontent.com/NVISO-BE/SEC599/master/5-movetowin02-INITIAL.sh
 /usr/bin/wget -O /root/Desktop/CTF/5-movetowin02-FINAL.sh https://raw.githubusercontent.com/NVISO-BE/SEC599/master/5-movetowin02-FINAL.sh
 
-/usr/bin/wget -O /root/Desktop/CTF/6-movetodc-INITIAL.sh https://raw.githubusercontent.com/NVISO-BE/SEC599/master/4-movetodc-INITIAL.sh
+/usr/bin/wget -O /root/Desktop/CTF/6-movetodc-INITIAL.sh https://raw.githubusercontent.com/NVISO-BE/SEC599/master/6-movetodc-INITIAL.sh
 /usr/bin/wget -O /root/Desktop/CTF/6-movetodc-FINAL.sh https://raw.githubusercontent.com/NVISO-BE/SEC599/master/6-movetodc-FINAL.sh
